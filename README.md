@@ -31,4 +31,5 @@ Set file path: (default: './config.txt')
 
 ## TODO:
 - Need to adjust argument parameters to better select multiple args and different filepath
+- Add additional error handling, or remove special characters from keys
 

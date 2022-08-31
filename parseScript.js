@@ -40,7 +40,7 @@ const convertToJSON = (filepath) => {
     const config_txt = readFile(file).split(/\r?\n|\r|\n/g);
     for (let i = 0; i < config_txt.length; i++) {
         // check for #comment and skip
-        if (config_txt[i][0] !== '#'){
+        if (config_txt[i][0] !== '#' && config_txt[i].includes('=')){
             const separated = config_txt[i].replace(/\s/g,'').split('=');
             const key = separated[0];
             const value = convertValues(separated[1]);
