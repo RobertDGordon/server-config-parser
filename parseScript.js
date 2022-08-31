@@ -48,4 +48,4 @@ const convertToJSON = (filepath) => {
     return obj;
 }
 
-console.log(convertToJSON())
+module.exports = convertToJSON;
