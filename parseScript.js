@@ -7,7 +7,7 @@ const readFile = (filepath) => {
     return file_string;
 }
 
-const convertToBoolean = (value) => {
+const convertValues = (value) => {
     if (parseFloat(value)){
         return parseFloat(value);
     } else {
@@ -40,7 +40,7 @@ const convertToJSON = (filepath) => {
         if (config_txt[i][0] !== '#'){
             const separated = config_txt[i].replace(/\s/g,'').split('=');
             const key = separated[0];
-            const value = convertToBoolean(separated[1]);
+            const value = convertValues(separated[1]);
             //add new key value to object
             obj = {...obj, [key]: value};
         }
