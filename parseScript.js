@@ -16,10 +16,13 @@ const convertValues = (value) => {
             case 'true':
             case 'on':
             case 'yes':
+            case '1':
                 return true;
             case false:
+            case 'false':
             case 'off':
-            case "no":
+            case 'no':
+            case '0':
                 return false;
             default:
                 return value;

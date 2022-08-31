@@ -1,12 +1,22 @@
 # server-config-parser
 Parses text file and returns JSON config file for servers
 
+## How to call function
+Function is exported as getConfig
+> getConfig(mode, filepath)
+### Args
+mode = '-s'
+filepath = './config.txt' (default)
+
 ## Command line options
+Test:
+> node setConfig -t
+
 Silent mode:
-> setConfig -s
+> node setConfig -s
 
 Set file path: (default: './config.txt')
-> setConfig -- './yourfile.txt'
+> node setConfig -t -set './yourfile.txt'
 
 ## Logic used
 1. Read text file & convert to string
