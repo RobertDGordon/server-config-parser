@@ -2,13 +2,15 @@
 Parses text file and returns JSON config file for servers
 
 ## How to use
-There are **two ways** to use this tool, by calling the function, or through the command line(*see below: command line options)
+There are **two ways** to use this tool, by calling the function, or through the command line(*see below: command line options*)
 
 Function is exported as getConfig from setConfig.js
 > const getConfig = require('./setConfig.js')
+
 > getConfig(mode, filepath)
 ##### Args
 > mode = '-s' *silent mode*
+
 > filepath = './config.txt' *(default)*
 
 ## Command line options
